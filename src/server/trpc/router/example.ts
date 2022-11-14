@@ -3,7 +3,7 @@ import { procedure, router } from "../utils";
 
 export default router({
   hello: procedure.input(z.object({ name: z.string() })).query(({ input }) => {
-    return `Hello ${input.name}`;
+    return `gday ${input.name}`;
   }),
   random: procedure
     .input(z.object({ num: z.number() }))
