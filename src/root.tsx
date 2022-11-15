@@ -54,9 +54,13 @@ export default function Root() {
             <Body>
                 <Suspense>
                     <ErrorBoundary>
-                        <Routes>
-                            <FileRoutes />
-                        </Routes>
+                        <main class="bg-base-300 mx-0 sm:mx-auto sm:w-full md:w-11/12 lg:w-10/12 xl:w-9/12 p-2 md:p-4 border-2 border-primary border-opacity-20 md:pb-16">
+
+                            <Routes>
+                                <FileRoutes />
+                            </Routes>
+
+                        </main>
                     </ErrorBoundary>
                 </Suspense>
                 <Scripts />
