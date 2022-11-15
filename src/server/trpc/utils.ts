@@ -10,6 +10,8 @@ const ratelimit = new Ratelimit({
 
 export const t = initTRPC.context<IContext>().create();
 
+
+
 const withRateLimit = t.middleware(async ({ ctx, next }) => {
   const ip = ctx.req.headers.get("x-forwarded-for") ?? "127.0.0.1";
 
@@ -31,5 +33,31 @@ const withRateLimit = t.middleware(async ({ ctx, next }) => {
   return next({ ctx });
 });
 
+
+
+// TODO: once auth is implemented, do shit here
+const isRegistered = t.middleware(({ ctx, next }) => {
+  // console.log(`isRegistered: ctx.session: ${JSON.stringify(ctx.session, null, 4)}`)
+
+  // if (!ctx.session || !ctx.session.user) {
+      throw new TRPCError({ code: "UNAUTHORIZED" })
+  // }
+
+  // return next({
+  //     ctx: {
+  //         session: { ...ctx.session, user: ctx.session.user },
+  //     },
+  // })
+})
+
+
+
+
 export const router = t.router;
-export const procedure = t.procedure.use(withRateLimit);
+
+// TODO: make all procedures go via rate limiter - once figure out how it works
+export const procedurePublicRateLimited = t.procedure.use(withRateLimit);
+
+export const procedurePublic = t.procedure
+
+export const procedureRegistered = t.procedure.use(isRegistered)

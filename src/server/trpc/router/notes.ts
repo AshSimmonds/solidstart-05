@@ -1,13 +1,13 @@
 import { z } from "zod";
-import { procedure, router } from "../utils";
+import { procedurePublic, procedurePublicRateLimited, procedureRegistered, router } from "../utils"
 
 export default router({
-  create: procedure
+  create: procedurePublicRateLimited
     .input(z.object({ text: z.string() }))
     .mutation(async ({ input, ctx }) => {
       return await ctx.prisma.notes.create({ data: input });
     }),
-  get: procedure
+  get: procedurePublicRateLimited
     .input(z.object({ id: z.string() }))
     .query(async ({ input, ctx }) => {
       return await ctx.prisma.notes.findUnique({ where: { id: input.id } });
