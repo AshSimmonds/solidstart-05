@@ -1,0 +1,446 @@
+[
+    {
+        "Information about applicants": {
+            "Applicant": {
+                "Name": "Terex",
+                "Address": "0952 Hagenes Fork",
+                "ABN or ACN": 932855352,
+                "Website": "terex.biz"
+            },
+            "Primary contact": {
+                "Name": "Sergio O'Conner",
+                "Position": "Investor Research Associate",
+                "Address": "0463 Melvina Plaza",
+                "Phone": "894-060-8008",
+                "Email": "Sergio_Kris@Terex.net",
+                "Acting as agent": true
+            },
+            "Contacts": [
+                {
+                    "Name": "Don Rohan",
+                    "Position": "Human Data Designer",
+                    "Address": "364 Runolfsdottir Hollow",
+                    "Phone": "851-455-0477",
+                    "Email": "Don_Rohan80@Terex.org",
+                    "Acting as agent": true
+                },
+                {
+                    "Name": "Sandra Simonis",
+                    "Position": "Legacy Interactions Architect",
+                    "Address": "232 Mann Junction",
+                    "Phone": "920-156-4178",
+                    "Email": "Sandra.Simonis30@Terex.ac.com",
+                    "Acting as agent": true
+                },
+                {
+                    "Name": "Clifford Bahringer",
+                    "Position": "Dynamic Infrastructure Assistant",
+                    "Address": "26063 Leann Fork",
+                    "Phone": "029-764-4085",
+                    "Email": "Clifford12@Terex.org",
+                    "Acting as agent": true
+                },
+                {
+                    "Name": "Edward Ruecker",
+                    "Position": "Dynamic Identity Officer",
+                    "Address": "1607 Dooley Canyon",
+                    "Phone": "776-844-5436",
+                    "Email": "Edward.Ruecker@Terex.ac.com",
+                    "Acting as agent": false
+                },
+                {
+                    "Name": "Toni Lockman",
+                    "Position": "Direct Markets Engineer",
+                    "Address": "92041 Hickle Mountains",
+                    "Phone": "304-196-7292",
+                    "Email": "Toni69@Terex.ac.com",
+                    "Acting as agent": true
+                },
+                {
+                    "Name": "Garrett Stiedemann",
+                    "Position": "National Functionality Designer",
+                    "Address": "29414 Celestino Camp",
+                    "Phone": "765-312-3441",
+                    "Email": "Garrett_Stiedemann@Terex.ac.com",
+                    "Acting as agent": false
+                },
+                {
+                    "Name": "Brian Kautzer",
+                    "Position": "International Paradigm Representative",
+                    "Address": "21943 Kira Spurs",
+                    "Phone": "564-484-7849",
+                    "Email": "Brian33@Terex.org",
+                    "Acting as agent": false
+                },
+                {
+                    "Name": "Dewey Mayer",
+                    "Position": "Chief Creative Specialist",
+                    "Address": "432 Karelle Roads",
+                    "Phone": "321-311-2058",
+                    "Email": "Dewey_Mayer@Terex.net",
+                    "Acting as agent": false
+                }
+            ]
+        },
+        "Organisational structure": {
+            "Details": "amet fugiat exercitation laboris eiusmod",
+            "Key personnel": [
+                {
+                    "Name": "Rudolph Miller",
+                    "Date of birth": "2022-05-27",
+                    "Place of birth": "Edd",
+                    "Address": "60894 Alf Bridge",
+                    "Role in organisation": "Investor Paradigm Coordinator",
+                    "Time in current role": 9,
+                    "Relevant qualifications and experience": [
+                        "ea labore",
+                        "Lorem ad",
+                        "Lorem"
+                    ]
+                },
+                {
+                    "Name": "Sophia Predovic",
+                    "Date of birth": "2022-04-04",
+                    "Place of birth": "Kingston",
+                    "Address": "538 Makayla Spur",
+                    "Role in organisation": "Customer Paradigm Analyst",
+                    "Time in current role": 24,
+                    "Relevant qualifications and experience": [
+                        "non sint",
+                        "cupidatat",
+                        "ut",
+                        "qui",
+                        "duis non sint",
+                        "irure veniam proident commodo id"
+                    ]
+                },
+                {
+                    "Name": "Kristi McLaughlin",
+                    "Date of birth": "2022-10-31",
+                    "Place of birth": "Sagarejo",
+                    "Address": "7495 Conroy Corner",
+                    "Role in organisation": "Dynamic Interactions Officer",
+                    "Time in current role": 23,
+                    "Relevant qualifications and experience": []
+                },
+                {
+                    "Name": "Sandra Lind",
+                    "Date of birth": "2022-06-15",
+                    "Place of birth": "Tiquisate",
+                    "Address": "401 Windler Run",
+                    "Role in organisation": "Global Accountability Planner",
+                    "Time in current role": 8,
+                    "Relevant qualifications and experience": [
+                        "dolor magna laboris est irure",
+                        "minim velit nulla non",
+                        "nostrud ex minim mollit quis"
+                    ]
+                },
+                {
+                    "Name": "Preston Considine",
+                    "Date of birth": "2021-12-18",
+                    "Place of birth": "Antwerpen",
+                    "Address": "0484 Bashirian Drive",
+                    "Role in organisation": "National Configuration Facilitator",
+                    "Time in current role": 8,
+                    "Relevant qualifications and experience": [
+                        "id quis ad",
+                        "Lorem mollit"
+                    ]
+                }
+            ],
+            "Ownership and control interests": [
+                {
+                    "Legal name": "Navient",
+                    "Percentage holding": 49,
+                    "Physical address": "48791 Raymond Court",
+                    "Phone": "582-298-5050",
+                    "Email": "Rudolph43@Navient.net",
+                    "ABN ACN": "",
+                    "Place of incorporation or current nationality": "Eritrea"
+                },
+                {
+                    "Legal name": "Science Applications International",
+                    "Percentage holding": 50,
+                    "Physical address": "81917 Stracke Parkway",
+                    "Phone": "295-644-0622",
+                    "Email": "Sophia31@ScienceApplicationsInternational.org",
+                    "ABN ACN": "",
+                    "Place of incorporation or current nationality": "Norfolk Island"
+                },
+                {
+                    "Legal name": "Health Net",
+                    "Percentage holding": 6,
+                    "Physical address": "68063 Klein Oval",
+                    "Phone": "396-351-0096",
+                    "Email": "Kristi.McLaughlin18@HealthNet.gov",
+                    "ABN ACN": "GE94CM2118976389625070",
+                    "Place of incorporation or current nationality": "Georgia"
+                },
+                {
+                    "Legal name": "Farmers Insurance Exchange",
+                    "Percentage holding": 51,
+                    "Physical address": "02250 O'Connell Crossroad",
+                    "Phone": "906-163-6889",
+                    "Email": "Sandra_Lind94@FarmersInsuranceExchange.net",
+                    "ABN ACN": "",
+                    "Place of incorporation or current nationality": "Guatemala"
+                },
+                {
+                    "Legal name": "Travelers Cos.",
+                    "Percentage holding": 34,
+                    "Physical address": "6540 Waelchi Loop",
+                    "Phone": "610-311-1727",
+                    "Email": "Preston99@TravelersCos.org",
+                    "ABN ACN": "BE75434634054951",
+                    "Place of incorporation or current nationality": "Belgium"
+                },
+                {
+                    "Legal name": "Massachusetts Mutual Life Insurance",
+                    "Percentage holding": 40,
+                    "Physical address": "17286 Schoen Crest",
+                    "Phone": "385-691-7649",
+                    "Email": "Daphne_Dibbert25@MassachusettsMutualLifeInsurance.gov",
+                    "ABN ACN": "",
+                    "Place of incorporation or current nationality": "Botswana"
+                }
+            ]
+        },
+        "Launch and payload": {
+            "Information about launch": {
+                "Purpose": "nisi nulla duis laboris commodo Lorem velit",
+                "Proposed launch facility": {
+                    "Name": "do consequat nulla",
+                    "Location": "928 Flo Vista",
+                    "Details": "Ipsum adipisicing sunt qui ex quis minim aute esse est officia. Dolore occaecat mollit laborum enim qui do labore commodo eu aute est. Non exercitation in ex veniam ad pariatur labore."
+                },
+                "Proposed launch vehicle": "et laboris qui laborum duis qui dolore",
+                "Launch period": "mollit id culpa commodo veniam officia consectetur magna tempor voluptate qui cillum enim consectetur dolore voluptate exercitation minim",
+                "Launch window": 14
+            },
+            "Information about payload": {
+                "Description": "id anim sunt nostrud ipsum magna mollit cupidatat",
+                "Purpose": "do mollit Lorem occaecat dolore nostrud ut cupidatat",
+                "Standards built to": [
+                    "Unbranded Granite Computer",
+                    "Fantastic Concrete Soap"
+                ],
+                "Manufacturer of subsystems": [
+                    {
+                        "Subsystem": "8.5.7",
+                        "Component": "",
+                        "Manufacturer": "Arthur J. Gallagher",
+                        "Country of manufacture": "Lesotho"
+                    },
+                    {
+                        "Subsystem": "3.9.4",
+                        "Component": "",
+                        "Manufacturer": "Mattel",
+                        "Country of manufacture": "Nigeria"
+                    },
+                    {
+                        "Subsystem": "5.5.4",
+                        "Component": "",
+                        "Manufacturer": "Columbia Sportswear",
+                        "Country of manufacture": "Chad"
+                    },
+                    {
+                        "Subsystem": "5.9.1",
+                        "Component": "LV43XYQWQ56KGJ8E1P7W0",
+                        "Manufacturer": "Colfax",
+                        "Country of manufacture": "Latvia"
+                    },
+                    {
+                        "Subsystem": "1.1.2",
+                        "Component": "",
+                        "Manufacturer": "UGI",
+                        "Country of manufacture": "Saint Barthelemy"
+                    },
+                    {
+                        "Subsystem": "3.3.0",
+                        "Component": "FR5985445519837A3DEDDS6MB67",
+                        "Manufacturer": "Albemarle",
+                        "Country of manufacture": "France"
+                    }
+                ],
+                "Testing": [
+                    "officer_communities.shtml",
+                    "washington_corporate_georgia.m1v",
+                    "rubber.png",
+                    "functionality_invoice_cotton.jpe",
+                    "unbranded.mp2"
+                ],
+                "Proposed trajectory and orbit": "occaecat aliqua sit cupidatat culpa consectetur magna nulla consectetur sunt enim ullamco nulla adipisicing consectetur ea",
+                "Intention of return": {
+                    "Will return": false,
+                    "Timing": "2022-04-25",
+                    "Location": "Germany",
+                    "Description of return process": "sint deserunt id Lorem aliqua aliquip labore enim cillum in id laboris adipisicing aliqua labore consequat est",
+                    "Return overseas": false,
+                    "Authorisation": "fresh_24_whiteboard.pdf"
+                }
+            },
+            "Information required for registration convention": {
+                "Name of launching states": "minim aute mollit irure mollit ex esse commodo nostrud eiusmod proident aliqua est elit consectetur non excepteur sit",
+                "Appropriate designer of the space object or its registration number": "esse duis non sit id velit excepteur reprehenderit dolore sit proident tempor mollit commodo voluptate eu ad cupidatat",
+                "Date of launch": "2022-08-27",
+                "Territory of location of launch": "en_LS",
+                "Orbital parameters": {
+                    "Nodal period": "amet",
+                    "Inclination": 266,
+                    "Apogee": 19,
+                    "Perigee": 56
+                },
+                "General function of object": "et sit qui proident do nisi excepteur cupidatat exercitation nisi ea"
+            }
+        },
+        "Launch safety": {
+            "Details of application": [
+                {
+                    "Title": "magna velit eu ipsum",
+                    "Description": "Tempor reprehenderit veniam enim ut reprehenderit."
+                },
+                {
+                    "Title": "quis excepteur",
+                    "Description": "Id anim ad nisi enim quis nostrud laborum do irure. In ex enim aute do consequat reprehenderit excepteur voluptate eiusmod anim minim nostrud labore occaecat. Culpa sint minim exercitation ullamco incididunt anim nostrud nisi pariatur sit commodo consectetur."
+                },
+                {
+                    "Title": "veniam nisi ut velit",
+                    "Description": "Minim et exercitation minim aute reprehenderit consectetur cillum deserunt cupidatat deserunt cillum laborum magna. Mollit nisi et nisi fugiat ad aute cillum minim irure nulla non nulla proident. Reprehenderit esse cupidatat nisi nisi exercitation dolor veniam aliquip consequat est officia magna. Consequat eu do reprehenderit ut est exercitation adipisicing ullamco ipsum labore mollit dolor id laboris. Anim laborum irure mollit veniam minim occaecat voluptate do reprehenderit pariatur qui adipisicing aliquip elit."
+                },
+                {
+                    "Title": "ipsum duis",
+                    "Description": "Qui qui excepteur do sint culpa consectetur Lorem et reprehenderit occaecat esse laboris dolore do. Consectetur officia laboris esse fugiat esse ut mollit quis laborum incididunt."
+                },
+                {
+                    "Title": "cillum velit eu duis ipsum",
+                    "Description": "Dolore ullamco eu sit deserunt. Qui cillum deserunt mollit aliquip cillum excepteur veniam cupidatat consectetur ea nisi. Veniam qui esse reprehenderit mollit. Fugiat laboris ex eiusmod mollit. Proident sint pariatur velit cupidatat ullamco velit cillum cupidatat pariatur officia ad duis."
+                },
+                {
+                    "Title": "sint occaecat ad",
+                    "Description": "Ex in reprehenderit tempor velit est labore dolore voluptate occaecat consequat ullamco consequat in amet. Tempor pariatur et do Lorem labore quis consequat minim ad minim et. Fugiat ea ut occaecat exercitation occaecat sunt aute ullamco consequat occaecat cillum enim. Officia consequat consectetur culpa nostrud excepteur ex velit ullamco qui velit dolor incididunt reprehenderit pariatur."
+                },
+                {
+                    "Title": "labore aliqua minim",
+                    "Description": "Incididunt fugiat ut fugiat adipisicing officia irure sit cillum officia esse est in incididunt. Sit commodo exercitation culpa Lorem eu excepteur velit excepteur deserunt eu reprehenderit qui. Elit ea dolor deserunt cillum ea voluptate eu in nisi ea nostrud."
+                }
+            ],
+            "Details of launch facility": [
+                {
+                    "Launch name": "deserunt sit elit reprehenderit cupidatat",
+                    "Date": "2022-01-12",
+                    "Link": "http://terex.biz"
+                },
+                {
+                    "Launch name": "magna excepteur duis proident dolor reprehenderit consectetur",
+                    "Date": "2022-07-10",
+                    "Link": "https://terex.biz"
+                },
+                {
+                    "Launch name": "reprehenderit anim sunt eiusmod",
+                    "Date": "2022-02-27",
+                    "Link": "http://terex.biz"
+                }
+            ]
+        },
+        "Debris mitigation": {
+            "Guideline or standard": "eu",
+            "Strategies": [
+                "drive.mp2a",
+                "villages.wav",
+                "granite_highway.jpeg",
+                "dirham_feed.png"
+            ]
+        },
+        "Contracts": {
+            "Person undertaking launch": {
+                "Undertaker": {
+                    "Name": "Claude Cassin",
+                    "Position": "International Functionality Assistant",
+                    "Address": "21276 Margarete Stravenue",
+                    "Phone": "077-696-5616",
+                    "Email": "Claude.Cassin0@GlobalPartners.org"
+                },
+                "Contract": "texas_soap_avon.gif"
+            },
+            "Use or lease of facilities": "magenta_front_line.pdf",
+            "Others undertaking activities connected with launch": [
+                {
+                    "Name": "Global Partners",
+                    "Address": "0668 Nyasia Ridge",
+                    "ABN or ACN": 491293504,
+                    "Website": "globalpartners.net"
+                },
+                {
+                    "Name": "Parexel International",
+                    "Address": "45871 Deckow Shore",
+                    "ABN or ACN": 355039447,
+                    "Website": "pi.net"
+                },
+                {
+                    "Name": "Iasis Healthcare",
+                    "Address": "8423 Mann Greens",
+                    "ABN or ACN": 445789845,
+                    "Website": "iasishealthcare.info"
+                }
+            ]
+        },
+        "Additional information": {
+            "Documents": [
+                "incredible.wav",
+                "macedonia.png",
+                "approach_service_desk_pink.pdf",
+                "intranet.mpeg",
+                "ssl.wav",
+                "israeli_bedfordshire.png",
+                "checking_bedfordshire.jpg",
+                "virgin.wav"
+            ]
+        },
+        "Applicant declaration": {
+            "Privacy and confidentialy provisions": {
+                "Read stuff": true
+            },
+            "Payload declaration": {
+                "Undertaking": {
+                    "Operation of payload": {
+                        "Liability": "reciprocal.png",
+                        "National security": "up_bedfordshire_center.mp2"
+                    }
+                },
+                "Declaration": {
+                    "Nuclear weapon": false,
+                    "WoMD": true,
+                    "Nuclear power sauce": {
+                        "Yes": false,
+                        "Ministerial approval": {
+                            "Approver": {
+                                "Name": "Lorene Brown",
+                                "Position": "Dynamic Optimization Agent",
+                                "Address": "70512 Hamill Harbor",
+                                "Phone": "848-552-5260",
+                                "Email": "Lorene_Brown97@Terex.gov",
+                                "Acting as agent": true
+                            },
+                            "Document": "4dccbaa6-f6c8-4d8f-83c8-8eb4ed9594b4"
+                        }
+                    }
+                },
+                "End matter": {
+                    "Accurate": true,
+                    "Authorised": false,
+                    "e-sign": {
+                        "Applicant": {
+                            "Signature": "122f4d40-42a9-4109-9d05-dddbd5de64f2",
+                            "Date": "2022-04-06"
+                        },
+                        "Witness": {
+                            "Signature": "a3fdfd0a-9b30-4008-ae45-5a969bad44fa",
+                            "Date": "2022-07-23"
+                        }
+                    }
+                }
+            }
+        }
+    }
+]
