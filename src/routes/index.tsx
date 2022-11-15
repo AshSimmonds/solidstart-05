@@ -1,5 +1,5 @@
 import { type ParentComponent, Switch, Match } from "solid-js"
-import { Title } from "solid-start"
+import { A, Title } from "solid-start"
 import { trpc } from "~/utils/trpc"
 
 const Home: ParentComponent = () => {
@@ -8,6 +8,9 @@ const Home: ParentComponent = () => {
     return (
         <>
             <Title>Home</Title>
+
+            <A href="/gruntify">Gruntify</A>
+
             <div>
                 <Switch
                     fallback={

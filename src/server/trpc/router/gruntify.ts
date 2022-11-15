@@ -11,7 +11,6 @@ const overseasPayloadPermitTable = "overseas_payload_permit"
 const defaultFetchUrl = airtableBaseUrl + overseasPayloadPermitTable
 
 
-
 export default router({
     asdf: procedurePublicRateLimited.input(z.object({ name: z.string() })).query(({ input }) => {
         return `gday ${input.name}`
@@ -62,8 +61,6 @@ async function _fetchFromAirtable(permitId: string | undefined = undefined) {
 
     const fetchUrl = defaultFetchUrl + filterFormula
 
-    console.log(`gruntify.ts _fetchFromAirtable fetchUrl ${fetchUrl}`)
-
     const fetchResult = await fetch(fetchUrl, {
         method: "GET",
         headers: {
@@ -72,8 +69,6 @@ async function _fetchFromAirtable(permitId: string | undefined = undefined) {
         }
     }).then(airtableResult => airtableResult.json())
         .then(async airtableJson => {
-
-            console.log(`gruntify.ts _fetchFromAirtable airtableJson: ${JSON.stringify(airtableJson, null, 4)}`)
 
             if (airtableJson.records.length > 0) {
 
