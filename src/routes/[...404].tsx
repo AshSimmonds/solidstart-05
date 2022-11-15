@@ -6,7 +6,7 @@ export default function NotFound() {
     return (
         <div class="text-center mx-auto">
             <PageTitle>Lost in space</PageTitle>
-            <h1>
+            <h1 class="mt-12">
                 <button class="text-2xl p-8"><A href="/" >404 | Not Found</A></button>
             </h1>
         </div>
