@@ -1,6 +1,6 @@
 import styles from "./H2-tall.module.css"
 
-export function H2Tall(props) {
+export function H2Tall(props: any) {
     return (
 
         <div class={styles.h2}>
