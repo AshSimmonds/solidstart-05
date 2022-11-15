@@ -7,8 +7,9 @@ const Home: ParentComponent = () => {
 
     return (
         <>
-            <Title>Home</Title>
-
+            <Title>SolidStart beta | SolidJS with tRPC Zod Prisma Tailwind Upstash Ratelimit Meta Auth0</Title>
+            <h1>SolidStart beta | SolidJS with tRPC Zod Prisma Tailwind Upstash Ratelimit Meta Auth0</h1>
+            
             <A href="/gruntify">Gruntify</A>
 
             <div>
