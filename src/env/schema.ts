@@ -6,6 +6,8 @@ export const serverScheme = z.object({
     DATABASE_URL: z.string(),
     UPSTASH_REDIS_REST_URL: z.string(),
     UPSTASH_REDIS_REST_TOKEN: z.string(),
+    AIRTABLE_API_KEY: z.string(),
+    AIRTABLE_BASE_ID: z.string(),
 })
 
 export const clientScheme = z.object({

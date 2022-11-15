@@ -1,29 +1,32 @@
-import { type ParentComponent, Switch, Match } from "solid-js"
+import { type ParentComponent, Switch, Match, Show } from "solid-js"
 import { Title } from "solid-start"
 import { trpc } from "~/utils/trpc"
 
-const Home: ParentComponent = () => {
+const testPermitId = 'recbr6s0W3tRpfUSw'
+
+const parameterObject = {
+    "permitId": testPermitId,
+}
+
+const GruntifyPage: ParentComponent = () => {
     // const res = trpc.hello.useQuery(() => ({ name: "from tRPC" }))
-    const res = trpc.asdf.useQuery(() => ({ name: "from tRPC" }))
+    const thePermit = trpc.getOne.useQuery(() => parameterObject)
+
+    console.log(`GruntifyPage thePermit: ${thePermit}`)
 
     return (
         <>
-            <Title>Home</Title>
-            <div>
-                <Switch
-                    fallback={
-                        <pre class="font-bold text-2xl text-gray-500">
-                            {JSON.stringify(res.data)}
-                        </pre>
-                    }
-                >
-                    <Match when={res.isLoading}>
-                        <div class="font-bold text-2xl text-gray-500">Loading...</div>
-                    </Match>
-                </Switch>
-            </div>
+            <Title>Gruntify test</Title>
+
+            <h1>Gruntify test</h1>
+
+            <Show when={thePermit}>
+                <pre>{JSON.stringify(thePermit, null, 4)}</pre>
+            </Show>
+
+
         </>
     )
 }
 
-export default Home
+export default GruntifyPage
