@@ -10,7 +10,7 @@ const parameterObject = {
 
 const GruntifyPage: ParentComponent = () => {
     // const res = trpc.hello.useQuery(() => ({ name: "from tRPC" }))
-    const thePermit = trpc.getOne.useQuery(() => parameterObject)
+    const thePermit = trpc.gruntify.getOne.useQuery(() => parameterObject)
 
     // console.log(`GruntifyPage thePermit: ${JSON.stringify(thePermit, null, 4)}`)
 
@@ -29,6 +29,11 @@ const GruntifyPage: ParentComponent = () => {
             <h1>Gruntify test</h1>
 
             <h2>gruntifyExportedSource</h2>
+
+            <p>
+                This is the bog standard building inspection form schema.
+            </p>
+
             <Show when={thePermit.isSuccess} fallback="Loading...">
                 <pre>
                     {thePermit.data.gruntify ? jsonifyGruntifiedSource(thePermit.data.gruntify) : 'no data'}
@@ -36,6 +41,9 @@ const GruntifyPage: ParentComponent = () => {
             </Show>
 
             <h2>Full source</h2>
+            <p>
+                ...of the Airtable record, for now.
+            </p>
             {/* <Show when={thePermit}> */}
             <pre>{JSON.stringify(thePermit, null, 4)}</pre>
             {/* </Show> */}

@@ -1,5 +1,5 @@
 import { z } from "zod"
-import { procedurePublic, procedurePublicRateLimited, procedureRegistered, router } from "../utils"
+import { procedurePublic, procedureRegistered, router } from "../utils"
 import env from "~/env/server"
 
 
@@ -12,10 +12,10 @@ const defaultFetchUrl = airtableBaseUrl + overseasPayloadPermitTable
 
 
 export default router({
-    asdf: procedurePublicRateLimited.input(z.object({ name: z.string() })).query(({ input }) => {
+    asdf: procedurePublic.input(z.object({ name: z.string() })).query(({ input }) => {
         return `gday ${input.name}`
     }),
-    qwer: procedurePublicRateLimited
+    qwer: procedurePublic
         .input(z.object({ num: z.number() }))
         .mutation(({ input }) => {
             return Math.floor(Math.random() * 100) / input.num
@@ -25,7 +25,7 @@ export default router({
 
 
 
-    getOne: procedurePublicRateLimited
+    getOne: procedurePublic
         .input(z.object({
             permitId: z.string()
         }))
