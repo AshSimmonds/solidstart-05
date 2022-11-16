@@ -1,4 +1,5 @@
 import { Head } from "solid-start";
+import { createMachine } from "xstate";
 import PageTitle from "~/components/PageTitle";
 import { trpc } from "~/utils/trpc";
 
@@ -125,30 +126,30 @@ export default function AccessPage() {
 
 
 
-    function ComponentToggleSwitch() {
-        const [current, send] = useMachine(favouriteMachine)
+    // function ComponentToggleSwitch() {
+    //     const [current, send] = useMachine(favouriteMachine)
 
-        return (
-            <div>
-                <div class={`checkbox-wrapper-55 ${current.value !== 'idle' ? 'cursor-wait disabled bg-red-500' : ''}`}>
-                    <label class={`rocker rocker-small ${current.value !== 'idle' ? 'cursor-wait disabled bg-red-500' : ''}`}>
-                        <input type="checkbox"
-                            onChange={() => { send('TOGGLE') }} checked={current.context.isFavourite}
-                            disabled={current.value !== 'idle'}
-                        />
-                        <span class={`switch-left ${current.value !== 'idle' ? 'cursor-wait disabled' : ''}`}>Yes</span>
-                        <span class={`switch-right ${current.value !== 'idle' ? 'cursor-wait disabled' : ''}`}>No</span>
-                    </label>
-                </div>
-                <div>
-                    {`current.context: ${JSON.stringify(current.context, null, 4)}`}
-                </div>
-                <div>
-                    {`State: ${current.value}`}
-                </div>
-            </div>
-        );
-    }
+    //     return (
+    //         <div>
+    //             <div class={`checkbox-wrapper-55 ${current.value !== 'idle' ? 'cursor-wait disabled bg-red-500' : ''}`}>
+    //                 <label class={`rocker rocker-small ${current.value !== 'idle' ? 'cursor-wait disabled bg-red-500' : ''}`}>
+    //                     <input type="checkbox"
+    //                         onChange={() => { send('TOGGLE') }} checked={current.context.isFavourite}
+    //                         disabled={current.value !== 'idle'}
+    //                     />
+    //                     <span class={`switch-left ${current.value !== 'idle' ? 'cursor-wait disabled' : ''}`}>Yes</span>
+    //                     <span class={`switch-right ${current.value !== 'idle' ? 'cursor-wait disabled' : ''}`}>No</span>
+    //                 </label>
+    //             </div>
+    //             <div>
+    //                 {`current.context: ${JSON.stringify(current.context, null, 4)}`}
+    //             </div>
+    //             <div>
+    //                 {`State: ${current.value}`}
+    //             </div>
+    //         </div>
+    //     );
+    // }
 
 
 
@@ -185,18 +186,18 @@ export default function AccessPage() {
                 <AccessCard title="Front-end UI" >
                     <ul>
                         <li>Guest: {successOutcome}</li>
-                        <li><>
+                        <li>
                             Registered: {isLoading ? 'loading...' : (user ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Premium: {isLoading ? 'loading...' : (user?.premium || user?.admin ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Power: {isLoading ? 'loading...' : (user?.power || user?.admin ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Admin: {isLoading ? 'loading...' : (user?.admin ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
+                        </li>
                     </ul>
                 </AccessCard>
 
@@ -204,21 +205,21 @@ export default function AccessPage() {
                 <AccessCard title="Back-end SERVER" >
 
                     <ul>
-                        <li><>
+                        <li>
                             Guest: {accessLevelBackendPublic.isFetching ? 'fetching...' : (accessLevelBackendPublic.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Registered: {accessLevelBackendRegistered.isLoading ? 'trying...' : (accessLevelBackendRegistered.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Premium: {accessLevelBackendPremium.isFetching ? 'fetching...' : (accessLevelBackendPremium.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Power: {accessLevelBackendPower.isFetching ? 'fetching...' : (accessLevelBackendPower.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Admin: {accessLevelBackendAdmin.isFetching ? 'fetching...' : (accessLevelBackendAdmin.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
+                        </li>
                     </ul>
 
                 </AccessCard>
@@ -226,21 +227,21 @@ export default function AccessPage() {
                 <AccessCard title="Back-end DATA read" >
 
                     <ul>
-                        <li><>
+                        <li>
                             Guest: {accessLevelDataPublic.isFetching ? 'fetching...' : (accessLevelDataPublic.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Registered: {accessLevelDataRegistered.isFetching ? 'fetching...' : (accessLevelDataRegistered.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Premium: {accessLevelDataPremium.isFetching ? 'fetching...' : (accessLevelDataPremium.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Power: {accessLevelDataPower.isFetching ? 'fetching...' : (accessLevelDataPower.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Admin: {accessLevelDataAdmin.isFetching ? 'fetching...' : (accessLevelDataAdmin.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
+                        </li>
                     </ul>
 
                 </AccessCard>
@@ -249,21 +250,21 @@ export default function AccessPage() {
                 <AccessCard title="Back-end DATA write" >
 
                     <ul>
-                        <li><>
+                        <li>
                             Guest: {accessLevelDataWritePublic.isFetching ? 'writing...' : (accessLevelDataWritePublic.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Registered: {accessLevelDataWriteRegistered.isFetching ? 'writing...' : (accessLevelDataRegistered.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Premium: {accessLevelDataWritePremium.isFetching ? 'fetching...' : (accessLevelDataWritePremium.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Power: {accessLevelDataWritePower.isFetching ? 'fetching...' : (accessLevelDataWritePower.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
-                        <li><>
+                        </li>
+                        <li>
                             Admin: {accessLevelDataWriteAdmin.isFetching ? 'fetching...' : (accessLevelDataWriteAdmin.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </></li>
+                        </li>
                     </ul>
 
                 </AccessCard>
@@ -272,7 +273,7 @@ export default function AccessPage() {
 
 
                 <AccessCard title="Toggle DATA" >
-                    <ComponentToggleSwitch />
+                    {/* <ComponentToggleSwitch /> */}
                 </AccessCard>
 
 
@@ -289,7 +290,6 @@ export default function AccessPage() {
             </pre>
 
         </>
-    )
     )
 }
 

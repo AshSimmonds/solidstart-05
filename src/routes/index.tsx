@@ -76,7 +76,7 @@ const buttonList = [
 
 
 const Home: ParentComponent = () => {
-    const res = trpc.hello.useQuery(() => ({ name: "from tRPC" }))
+    const res = trpc.example.hello.useQuery(() => ({ name: "from tRPC" }))
 
     const clientMessage = clientGday('dude')
     const serverMessage = serverGday('sweet')
