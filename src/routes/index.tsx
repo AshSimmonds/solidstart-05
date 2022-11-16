@@ -47,8 +47,8 @@ const buttonList = [
         "colorClass": "accent"
     },
     {
-        "buttonText": "Blank (info)",
-        "buttonLink": "/blank",
+        "buttonText": "Access (info)",
+        "buttonLink": "/access",
         "colorClass": "info"
     },
     {
