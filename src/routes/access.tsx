@@ -26,25 +26,25 @@ export default function AccessPage() {
 
 
 
-    const accessLevelBackendPublic = trpc.authentication.canAccessBackendPublic.useQuery()
-    const accessLevelBackendRegistered = trpc.authentication.canAccessBackendRegistered.useQuery()
-    const accessLevelBackendPremium = trpc.authentication.canAccessBackendPremium.useQuery()
-    const accessLevelBackendPower = trpc.authentication.canAccessBackendPower.useQuery()
-    const accessLevelBackendAdmin = trpc.authentication.canAccessBackendAdmin.useQuery()
+    // const accessLevelBackendPublic = trpc.authentication.canAccessBackendPublic.useQuery()
+    // const accessLevelBackendRegistered = trpc.authentication.canAccessBackendRegistered.useQuery()
+    // const accessLevelBackendPremium = trpc.authentication.canAccessBackendPremium.useQuery()
+    // const accessLevelBackendPower = trpc.authentication.canAccessBackendPower.useQuery()
+    // const accessLevelBackendAdmin = trpc.authentication.canAccessBackendAdmin.useQuery()
 
 
-    const accessLevelDataPublic = trpc.authentication.canAccessDatabasePublic.useQuery()
-    const accessLevelDataRegistered = trpc.authentication.canAccessDatabaseRegistered.useQuery()
-    const accessLevelDataPremium = trpc.authentication.canAccessDatabasePremium.useQuery()
-    const accessLevelDataPower = trpc.authentication.canAccessDatabasePower.useQuery()
-    const accessLevelDataAdmin = trpc.authentication.canAccessDatabaseAdmin.useQuery()
+    // const accessLevelDataPublic = trpc.authentication.canAccessDatabasePublic.useQuery()
+    // const accessLevelDataRegistered = trpc.authentication.canAccessDatabaseRegistered.useQuery()
+    // const accessLevelDataPremium = trpc.authentication.canAccessDatabasePremium.useQuery()
+    // const accessLevelDataPower = trpc.authentication.canAccessDatabasePower.useQuery()
+    // const accessLevelDataAdmin = trpc.authentication.canAccessDatabaseAdmin.useQuery()
 
 
-    const accessLevelDataWritePublic = trpc.authentication.canAccessDatabaseWritePublic.useQuery()
-    const accessLevelDataWriteRegistered = trpc.authentication.canAccessDatabaseWriteRegistered.useQuery()
-    const accessLevelDataWritePremium = trpc.authentication.canAccessDatabaseWritePremium.useQuery()
-    const accessLevelDataWritePower = trpc.authentication.canAccessDatabaseWritePower.useQuery()
-    const accessLevelDataWriteAdmin = trpc.authentication.canAccessDatabaseWriteAdmin.useQuery()
+    // const accessLevelDataWritePublic = trpc.authentication.canAccessDatabaseWritePublic.useQuery()
+    // const accessLevelDataWriteRegistered = trpc.authentication.canAccessDatabaseWriteRegistered.useQuery()
+    // const accessLevelDataWritePremium = trpc.authentication.canAccessDatabaseWritePremium.useQuery()
+    // const accessLevelDataWritePower = trpc.authentication.canAccessDatabaseWritePower.useQuery()
+    // const accessLevelDataWriteAdmin = trpc.authentication.canAccessDatabaseWriteAdmin.useQuery()
 
 
 
@@ -60,7 +60,8 @@ export default function AccessPage() {
 
     const { authentication } = trpc.useContext()
 
-    const initialIsFavourite = trpc.authentication.getFavourite.useQuery().data
+    // const initialIsFavourite = trpc.authentication.getFavourite.useQuery().data
+    const initialIsFavourite = false
 
 
     const favouriteMachine =
@@ -205,7 +206,7 @@ export default function AccessPage() {
                 <AccessCard title="Back-end SERVER" >
 
                     <ul>
-                        <li>
+                        {/* <li>
                             Guest: {accessLevelBackendPublic.isFetching ? 'fetching...' : (accessLevelBackendPublic.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
                         </li>
                         <li>
@@ -219,7 +220,7 @@ export default function AccessPage() {
                         </li>
                         <li>
                             Admin: {accessLevelBackendAdmin.isFetching ? 'fetching...' : (accessLevelBackendAdmin.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </li>
+                        </li> */}
                     </ul>
 
                 </AccessCard>
@@ -227,7 +228,7 @@ export default function AccessPage() {
                 <AccessCard title="Back-end DATA read" >
 
                     <ul>
-                        <li>
+                        {/* <li>
                             Guest: {accessLevelDataPublic.isFetching ? 'fetching...' : (accessLevelDataPublic.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
                         </li>
                         <li>
@@ -241,7 +242,7 @@ export default function AccessPage() {
                         </li>
                         <li>
                             Admin: {accessLevelDataAdmin.isFetching ? 'fetching...' : (accessLevelDataAdmin.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </li>
+                        </li> */}
                     </ul>
 
                 </AccessCard>
@@ -250,7 +251,7 @@ export default function AccessPage() {
                 <AccessCard title="Back-end DATA write" >
 
                     <ul>
-                        <li>
+                        {/* <li>
                             Guest: {accessLevelDataWritePublic.isFetching ? 'writing...' : (accessLevelDataWritePublic.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
                         </li>
                         <li>
@@ -264,7 +265,7 @@ export default function AccessPage() {
                         </li>
                         <li>
                             Admin: {accessLevelDataWriteAdmin.isFetching ? 'fetching...' : (accessLevelDataWriteAdmin.data ? <>{successOutcome}</> : <>{failOutcome}</>)}
-                        </li>
+                        </li> */}
                     </ul>
 
                 </AccessCard>
