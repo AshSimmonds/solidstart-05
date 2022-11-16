@@ -2,13 +2,26 @@ import { z } from "zod"
 import { procedurePublic, procedureRegistered, router } from "../utils"
 import env from "~/env/server"
 
+const overseasPayloadPermitTable = "overseas_payload_permit"
+
+const defaultAirtableRecordId = "recbr6s0W3tRpfUSw"
+const defaultXataRecordId = "rec_cdmqgqdheior0kfh2cgg"
 
 const airtableBaseId = env.AIRTABLE_BASE_ID
 const airtableApiKey = env.AIRTABLE_API_KEY
-
 const airtableBaseUrl = "https://api.airtable.com/v0/" + airtableBaseId + "/"
-const overseasPayloadPermitTable = "overseas_payload_permit"
-const defaultFetchUrl = airtableBaseUrl + overseasPayloadPermitTable
+const defaultAirtableFetchUrl = airtableBaseUrl + overseasPayloadPermitTable
+
+const xataApiKey = env.XATA_API_KEY
+const xataBaseUrl = "https://bluedwarf-hannvl.us-east-1.xata.sh/db/recombobulator:main/tables/"
+const defaultXataFetchUrl = xataBaseUrl + overseasPayloadPermitTable + "/"
+
+const useAirtableNotXata = false
+
+
+let defaultFetchUrl = useAirtableNotXata ? defaultAirtableFetchUrl : defaultXataFetchUrl
+let defaultApiKey = useAirtableNotXata ? airtableApiKey : xataApiKey
+
 
 
 export default router({
@@ -36,7 +49,7 @@ export default router({
 
                     // console.log(`getOne permitObject: ${JSON.stringify(permitObject, null, 4)}`)
 
-                    return permitObject.records[0].fields
+                    return permitObject
                 })
                 .catch((error: any) => {
                     console.log(`getOne error: ${error}`)
@@ -54,30 +67,41 @@ export default router({
 async function _fetchFromAirtable(permitId: string | undefined = undefined) {
 
     let filterFormula = ''
-    if (permitId) {
+    // if (permitId && useAirtableNotXata) {
+    if (useAirtableNotXata) {
         // filterFormula = encodeURI(`?filterByFormula={user_id}="${userId ? userId : 'asdf'}"`)
-        filterFormula = encodeURI(`?filterByFormula={record_id}="${permitId}"`)
+        // filterFormula = encodeURI(`?filterByFormula={record_id}="${permitId}"`)
+        filterFormula = encodeURI(`?filterByFormula={record_id}="${defaultAirtableRecordId}"`)
+    }
+
+    // if (permitId && !useAirtableNotXata) {
+    if (!useAirtableNotXata) {
+        // filterFormula = encodeURI(`?filterByFormula={user_id}="${userId ? userId : 'asdf'}"`)
+        // filterFormula = "data/" + permitId
+        filterFormula = "data/" + defaultXataRecordId
     }
 
     const fetchUrl = defaultFetchUrl + filterFormula
 
+    console.log(`fetchUrl: ${fetchUrl}`)
+
     const fetchResult = await fetch(fetchUrl, {
         method: "GET",
         headers: {
-            "Authorization": "Bearer " + airtableApiKey,
+            "Authorization": "Bearer " + defaultApiKey,
             "Content-Type": "application/json"
         }
     }).then(airtableResult => airtableResult.json())
         .then(async airtableJson => {
 
-            if (airtableJson.records.length > 0) {
+            // console.log(`_fetchFromAirtable airtableJson: ${JSON.stringify(airtableJson, null, 4)}`)
 
-                // console.log(`_fetchFromAirtable airtableJson: ${JSON.stringify(airtableJson, null, 4)}`)
+            if (useAirtableNotXata) {
 
-                return airtableJson
+                return airtableJson.records[0].fields
 
             } else {
-                // TODO: dunno
+                return airtableJson
             }
         }).catch((error: Error) => {
             console.error(`gruntify.ts _fetchFromAirtable error: ${error}`)
