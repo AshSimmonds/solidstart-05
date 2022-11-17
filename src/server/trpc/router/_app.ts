@@ -1,15 +1,15 @@
 import { t } from "../utils"
 import exampleRouter from "./example"
 import notesRouter from "./notes"
-import gruntifyRouter from "./gruntify"
+import gluntifyRouter from "./gluntify"
 import authenticationRouter from "./authentication"
 
-// export const appRouter = t.mergeRouters(exampleRouter, notesRouter, gruntifyRouter, authenticationRouter)
+// export const appRouter = t.mergeRouters(exampleRouter, notesRouter, gluntifyRouter, authenticationRouter)
 
 export const appRouter = t.router({
     example: exampleRouter,
     notes: notesRouter,
-    gruntify: gruntifyRouter,
+    gluntify: gluntifyRouter,
     authentication: authenticationRouter,
 })
 

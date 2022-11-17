@@ -58,7 +58,7 @@ export default function Root() {
 
                         <HeaderBar />
 
-                        <main class="bg-base-300 mx-0 sm:mx-auto sm:w-full md:w-11/12 lg:w-10/12 xl:w-9/12 p-2 md:p-4 border-2 border-primary border-opacity-20 md:pb-16">
+                        <main class="bg-base-300 mx-0 sm:mx-auto sm:w-full md:w-11/12 lg:w-10/12 xl:w-9/12 p-2 md:p-4 md:pt-0 border-2 border-primary border-opacity-20 md:pb-16">
 
                             <Routes>
                                 <FileRoutes />

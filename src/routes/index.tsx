@@ -32,7 +32,7 @@ const buttonList = [
         "colorClass": "neutral"
     },
     {
-        "buttonText": "O.P.P. (primary)",
+        "buttonText": "O.P.P.s (primary)",
         "buttonLink": "/opps",
         "colorClass": "primary"
     },
@@ -42,8 +42,8 @@ const buttonList = [
         "colorClass": "secondary"
     },
     {
-        "buttonText": "Blank (accent)",
-        "buttonLink": "/blank",
+        "buttonText": "XCOM (accent)",
+        "buttonLink": "/xcom",
         "colorClass": "accent"
     },
     {
@@ -57,13 +57,13 @@ const buttonList = [
         "colorClass": "success"
     },
     {
-        "buttonText": "Blank (warning)",
-        "buttonLink": "/gruntify",
+        "buttonText": "Gluntify (warning)",
+        "buttonLink": "/gluntify",
         "colorClass": "warning"
     },
     {
-        "buttonText": "Blank (error)",
-        "buttonLink": "/blank",
+        "buttonText": "Xata (error)",
+        "buttonLink": "/xata",
         "colorClass": "error"
     },
     {

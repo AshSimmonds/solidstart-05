@@ -104,7 +104,7 @@ async function _fetchFromAirtable(permitId: string | undefined = undefined) {
                 return airtableJson
             }
         }).catch((error: Error) => {
-            console.error(`gruntify.ts _fetchFromAirtable error: ${error}`)
+            console.error(`gluntify.ts _fetchFromAirtable error: ${error}`)
             return error
         })
 
