@@ -32,8 +32,8 @@ const buttonList = [
         "colorClass": "neutral"
     },
     {
-        "buttonText": "O.P.P.s (primary)",
-        "buttonLink": "/opps",
+        "buttonText": "GitHub (primary)",
+        "buttonLink": "https://github.com/AshSimmonds/solidstart-05",
         "colorClass": "primary"
     },
     {
@@ -52,8 +52,8 @@ const buttonList = [
         "colorClass": "info"
     },
     {
-        "buttonText": "Blank (success)",
-        "buttonLink": "/blank",
+        "buttonText": "Vercel (success)",
+        "buttonLink": "https://vercel.com/ashsimmonds/solidstart-05",
         "colorClass": "success"
     },
     {

@@ -36,7 +36,7 @@ const GluntifyPage: ParentComponent = () => {
 
             <Show when={thePermit.isSuccess} fallback="Loading...">
                 <pre>
-                    {thePermit.data.gluntify ? jsonifyGluntifiedSource(thePermit.data.gluntify) : 'no data'}
+                    {thePermit.data.gruntify ? jsonifyGluntifiedSource(thePermit.data.gluntify) : 'no data'}
                 </pre>
             </Show>
 
